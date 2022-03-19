@@ -1,14 +1,205 @@
-Search artists, playlists or tracks
-Dany Schudler
-Edit Profile
-Overview
-News
-Playlists
-Discover
-Dashboard
-Messages
-Notifications
-Account
-Featured Playlists
-Profile Views
-Tracks
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#040517">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ba534b8e74.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rainbow Music</title>
+  </head>
+
+  <body>
+    <aside>
+      <!-- profile -->
+      <div class="profile">
+        <img src="assets/profile.jpg" alt="profile image" />
+        <div class="profile--texts">
+          <h3>Tiago Queiroz</h3>
+          <a href="#"
+            ><small>Edit Profile</small><i class="fa-solid fa-gear"></i></a>
+        </div>
+        <a href="#" class="togllebuton"><i class="fa-solid fa-bars-staggered"></i></a>
+      </div>
+      <!-- Lists -->
+      <div class="menu-list">
+        <ul class="side-list">
+          <li>
+            <a href="#"><i class="fa-solid fa-spinner"></i></i>Overview</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-music"></i>PlayLists</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-podcast"></i>Discover</a>
+          </li>
+        </ul>
+        <ul class="side-list">
+          <li>
+            <a href="#"><i class="fa-solid fa-sliders"></i>Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-message"></i>Messages</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-bell"></i>Notifications</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-solid fa-user"></i>Account</a>
+          </li>
+        </ul>
+        <a href="#" class="togllebuton"><i class="fa-solid fa-x"></i></a>
+      </div>
+    </aside>
+    <main>
+      <div class="main-bg"></div>
+      <div class="main__content">
+        <div class="seach-bar">
+          <i class="fa-solid fa-magnifying-glass"></i
+          ><input
+            type="text"
+            placeholder="Seach Artists, Playlists or Tracks"
+          />
+        </div>
+        <!-- Featured Play list -->
+        <section class="feature">
+          <h3 class="section-title">Featured Playlists</h3>
+          <div class="feature-scroll">
+            <!-- feature Element -->
+            <div class="feature-playlist">
+              <figure>
+                  <img src="assets/playlist1.jpg" alt="" />
+              </figure>
+              <h3>Only STARDUST</h3>
+              <small>24 tracks</small>
+            </div>
+            <!-- feature Element -->
+            <div class="feature-playlist">
+              <figure>
+                  <img src="assets/playlist2.jpg" alt="" />
+              </figure>
+              <h3>Mike Vilella</h3>
+              <small>12 tracks</small>
+            </div>
+            <!-- feature Element -->
+            <div class="feature-playlist">
+              <figure>
+                  <img src="assets/playlist3.jpg" alt="" />
+              </figure>
+              <h3>the best sigles s2</h3>
+              <small>163 tracks</small>
+            </div>
+            <!-- feature Element -->
+            <div class="feature-playlist">
+              <figure>
+                  <img src="assets/playlist4.jpg" alt="" />
+              </figure>
+              <h3>Indie</h3>
+              <small>138 tracks</small>
+            </div>
+          </div>
+        </section>
+
+        <section class="infos">
+          <section class="views">
+            <h3 class="section-title">Profile views</h3>
+            <ul>
+              <li class="view__element">
+                <img src="assets/view1.jpg" alt="" />
+                <span class="element-text">
+                  <h4>Jenny Villa</h4>
+                  <small>1 day ago</small>
+                </span>
+                <span>4 albuns</span>
+              </li>
+
+              <li class="view__element">
+                <img src="assets/view2.jpg" alt="" />
+                <span class="element-text">
+                  <h4>Aqua</h4>
+                  <small>3 day ago</small>
+                </span>
+                <span>2 albuns</span>
+              </li>
+              <li class="view__element">
+                <img src="assets/view3.jpg" alt="" />
+                <span class="element-text">
+                  <h4>This is War</h4>
+                  <small>2 weeks ago</small>
+                </span>
+                <span>5 albuns</span>
+              </li>
+            </ul>
+          </section>
+          <section class="tracks">
+            <h3 class="section-title">Tracks</h3>
+            <div class="tracks-scroll">
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track1.jpg" alt="" />
+                <h5>Mahara Bom</h5>
+                <small>Sexy in Paris</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track2.jpg" alt="" />
+                <h5>Donna</h5>
+                <small>Pseudo-life</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track3.jpg" alt="" />
+                <h5>Avven</h5>
+                <small>Magic</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track4.jpg" alt="" />
+                <h5>Cony Matt</h5>
+                <small>Living in hells</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track5.jpg" alt="" />
+                <h5>Claudia Cany</h5>
+                <small>Remember</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track6.jpg" alt="" />
+                <h5>Samm</h5>
+                <small>Same - Huly</small>
+              </div>
+              <!-- track element -->
+              <div class="track__element">
+                <img src="assets/track7.jpg" alt="" />
+                <h5>Pacify</h5>
+                <small>Portrait</small>
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <script>
+      let toglle = document.querySelectorAll(".togllebuton")
+      toglle.forEach(element => {
+        element.addEventListener('click', switchHidden)
+      });      
+
+      function switchHidden(){
+        let element = document.querySelector(".menu-list")
+        element.classList.toggle("see")
+        console.log("escondeu")
+      }
+    </script>
+  </body>
+</html>
