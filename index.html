@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#040517">
+    <meta name="theme-color" content="#040517" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/ba534b8e74.js"
@@ -21,15 +21,18 @@
         <div class="profile--texts">
           <h3>Tiago Queiroz</h3>
           <a href="#"
-            ><small>Edit Profile</small><i class="fa-solid fa-gear"></i></a>
+            ><small>Edit Profile</small><i class="fa-solid fa-gear"></i
+          ></a>
         </div>
-        <a href="#" class="togllebuton"><i class="fa-solid fa-bars-staggered"></i></a>
+        <a href="#" class="togllebuton"
+          ><i class="fa-solid fa-bars-staggered"></i
+        ></a>
       </div>
       <!-- Lists -->
       <div class="menu-list">
         <ul class="side-list">
           <li>
-            <a href="#"><i class="fa-solid fa-spinner"></i></i>Overview</a>
+            <a href="#"><i class="fa-solid fa-spinner"></i>Overview</a>
           </li>
           <li>
             <a href="#"><i class="fa-solid fa-newspaper"></i>News</a>
@@ -73,33 +76,33 @@
           <h3 class="section-title">Featured Playlists</h3>
           <div class="feature-scroll">
             <!-- feature Element -->
-            <div class="feature-playlist">
+            <div class="feature-playlist album">
               <figure>
-                  <img src="assets/playlist1.jpg" alt="" />
+                <img src="assets/playlist1.jpg" alt="" />
               </figure>
               <h3>Only STARDUST</h3>
               <small>24 tracks</small>
             </div>
             <!-- feature Element -->
-            <div class="feature-playlist">
+            <div class="feature-playlist album">
               <figure>
-                  <img src="assets/playlist2.jpg" alt="" />
+                <img src="assets/playlist2.jpg" alt="" />
               </figure>
               <h3>Mike Vilella</h3>
               <small>12 tracks</small>
             </div>
             <!-- feature Element -->
-            <div class="feature-playlist">
+            <div class="feature-playlist album">
               <figure>
-                  <img src="assets/playlist3.jpg" alt="" />
+                <img src="assets/playlist3.jpg" alt="" />
               </figure>
               <h3>the best sigles s2</h3>
               <small>163 tracks</small>
             </div>
             <!-- feature Element -->
-            <div class="feature-playlist">
+            <div class="feature-playlist album">
               <figure>
-                  <img src="assets/playlist4.jpg" alt="" />
+                <img src="assets/playlist4.jpg" alt="" />
               </figure>
               <h3>Indie</h3>
               <small>138 tracks</small>
@@ -142,43 +145,43 @@
             <h3 class="section-title">Tracks</h3>
             <div class="tracks-scroll">
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track1.jpg" alt="" />
                 <h5>Mahara Bom</h5>
                 <small>Sexy in Paris</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track2.jpg" alt="" />
                 <h5>Donna</h5>
                 <small>Pseudo-life</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track3.jpg" alt="" />
                 <h5>Avven</h5>
                 <small>Magic</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track4.jpg" alt="" />
                 <h5>Cony Matt</h5>
                 <small>Living in hells</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track5.jpg" alt="" />
                 <h5>Claudia Cany</h5>
                 <small>Remember</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track6.jpg" alt="" />
                 <h5>Samm</h5>
                 <small>Same - Huly</small>
               </div>
               <!-- track element -->
-              <div class="track__element">
+              <div class="track__element album">
                 <img src="assets/track7.jpg" alt="" />
                 <h5>Pacify</h5>
                 <small>Portrait</small>
@@ -189,17 +192,6 @@
       </div>
     </main>
 
-    <script>
-      let toglle = document.querySelectorAll(".togllebuton")
-      toglle.forEach(element => {
-        element.addEventListener('click', switchHidden)
-      });      
-
-      function switchHidden(){
-        let element = document.querySelector(".menu-list")
-        element.classList.toggle("see")
-        console.log("escondeu")
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -107,6 +107,8 @@ main {
 }
 .main-bg {
   background-image: url("https://images.pexels.com/photos/2967853/pexels-photo-2967853.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-attachment: fixed;
+  background-size: cover;
   height: 100%;
   width: 100%;
   filter: brightness(0.4) blur(1.5rem);
@@ -178,6 +180,7 @@ main {
   overflow: hidden;
   border-radius: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .feature-playlist img {
@@ -185,6 +188,7 @@ main {
   height: 200px;
   border-radius: 20px;
   transition: all 1s;
+  
 }
 .feature-playlist:hover img {
   transform: scale(1.2);
@@ -194,6 +198,21 @@ main {
 }
 .feature-playlist small {
   font-size: var(--font-micro);
+}
+.feature-playlist:hover figure::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  z-index: 2;
+  position: absolute;
+  top: 25%;
+  bottom: 25%;
+  left: 30%;
+  background-image: url("assets/play.png");
+  filter:opacity(0.5) invert(1);
+  pointer-events: none;
 }
 /* infos */
 
@@ -325,11 +344,16 @@ main {
     position: relative;
   }
   main,
-  .main__content {
+  .main__content,
+  .main-bg {
+    grid-column-start: 1;
     height: max-content;
     padding-bottom: 10px;
   }
-
+  .main-bg {
+    height: 100%;
+    position: absolute;
+  }
   /* toglle menu */
   @keyframes grow {
     from {
@@ -350,7 +374,7 @@ main {
     animation: grow 1s reverse;
     transition: 1s;
   }
-  .menu-list li{
+  .menu-list li {
     font-size: 25px;
   }
   .togllebuton {
